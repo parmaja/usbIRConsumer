@@ -11,7 +11,7 @@ The MIT License (MIT)
 https://opensource.org/licenses/MIT
 
 ##Tested##
-	Attiny85 Arduino IDE 1.6 with common remote controls
+	Attiny85, Arduino IDE 1.6 with common remote controls
 
 ##How to Compile##
 
@@ -20,7 +20,9 @@ Also you need to install two of library, and one board into your ide.
 
 ###Required Libraries###
 https://github.com/parmaja/miniIRemote
-https://github.com/parmaja/miniUsbKeyboard
+https://github.com/zaher/vusb-for-arduino/tree/master/libraries/UsbKeyboard
+
+TODO: https://github.com/parmaja/miniUsbKeyboard
 
 ###Attiny85 Board###
 In IDE->File->Preferences->Additional Boards Manager URLs
@@ -35,4 +37,4 @@ Be sure you uploaded a bootloader first (once) into your Attiny to set fuses to 
 
 ##How to contribute##
 Easy, Correct my English language ;) 
-Rport bugs, or Fork it.
+Report bugs, or Fork it.
