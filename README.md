@@ -19,8 +19,10 @@ First You need Arduino IDE 1.6 or over to compile.
 Also you need to install two of library, and one board into your ide.
 
 ###Required Libraries###
+
 https://github.com/parmaja/miniIRemote
-https://github.com/zaher/vusb-for-arduino/tree/master/libraries/UsbKeyboard
+
+https://github.com/parmaja/usbKeyboard
 
 TODO: https://github.com/parmaja/miniUsbKeyboard
 

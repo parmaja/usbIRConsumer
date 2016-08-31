@@ -10,10 +10,15 @@
 */
 
 //#define DEBUG //enable it to send out info over Serial, not work in attiny
+//#define SEND_CODE //send code string to pc as keyboard keys if the code not exists
 
 #include <avr/pgmspace.h>
+
 #include <UsbKeyboard.h>
+//https://github.com/parmaja/usbKeyboard
+
 #include <miniIRemote.h>
+//https://github.com/parmaja/miniIRemote
 
 /*
 // IR sensor connected to PB0 = ATtiny85 physical pin 5
@@ -95,9 +100,11 @@ void loop() {
         UsbKeyboard::sendConsumerStroke(CONSUMER_VOLUME_DECREMENT);
       }
       else {        
-        /*UsbKeyboard::sendString(" Code: ");
+        #ifdef SEND_CODE
+        UsbKeyboard::sendString(" Code: ");
         UsbKeyboard::update();
-        sendNumber(irCode);*/
+        sendNumber(irCode);
+        #endif
       }
     }    
 }
